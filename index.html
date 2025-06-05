@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamlo.wlrd</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-storage-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+  <h1>HAMLO.WLRD</h1>
+
+  <section class="upload">
+    <h2>Upload Track</h2>
+    <form id="uploadForm">
+      <input type="text" id="title" placeholder="Track Title" required />
+      <input type="text" id="artist" placeholder="Artist" required />
+      <input type="text" id="genre" placeholder="Genre" />
+      <input type="date" id="releaseDate" />
+      <input type="file" id="audioFile" accept="audio/*" required />
+      <button type="submit">Upload Track</button>
+    </form>
+    <div id="uploadStatus"></div>
+  </section>
+
+  <section class="playlist">
+    <h2>Uploaded Tracks</h2>
+    <ul id="trackList"></ul>
+  </section>
+
+  <section class="games">
+    <h2>Alien Beat Battle</h2>
+    <button id="alienBtn">👽 Tap!</button>
+    <p>Score: <span id="score">0</span></p>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
