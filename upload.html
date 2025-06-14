@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upload | Hamlo.wlrd</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-storage-compat.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+  <nav>
+    <h1>HAMLO.WLRD</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="upload.html">Upload</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Upload Your Track</h2>
+    <form id="uploadForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="file" id="audioFile" accept="audio/*" required />
+      <input type="file" id="coverArt" accept="image/*" />
+      <button type="submit">Upload</button>
+    </form>
+    <div id="uploadStatus"></div>
+  </main>
+</body>
+</html>
