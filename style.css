@@ -1,0 +1,56 @@
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: black;
+  color: gold;
+  overflow-x: hidden;
+}
+canvas#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+nav {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 { font-size: 1.5rem; color: gold; }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 5px cyan;
+}
+nav ul li a:hover {
+  color: cyan;
+  text-shadow: 0 0 10px gold;
+}
+main {
+  padding: 2rem;
+}
+form input, form button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+}
+form button {
+  background: cyan;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}

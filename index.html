@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hamlo.wlrd</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-storage-compat.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+  <nav>
+    <h1>HAMLO.WLRD</h1>
+    <ul>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#upload">Upload</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="music">
+      <h2>Music</h2>
+      <div id="firebaseTracks"></div>
+      <iframe src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/tacos_4_breakfast/see-the-fire" width="100%" height="166"></iframe>
+      <iframe src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/tacos_4_breakfast/shorline-infused" width="100%" height="166"></iframe>
+    </section>
+    <section id="games">
+      <h2>Games</h2>
+      <button id="alienBtn">Alien Beat Battle 👽</button>
+    </section>
+    <section id="upload">
+      <h2>Upload Your Track</h2>
+      <form id="uploadForm">
+        <input type="text" id="title" placeholder="Title" required />
+        <input type="file" id="audioFile" accept="audio/*" required />
+        <input type="file" id="coverArt" accept="image/*" />
+        <button type="submit">Upload</button>
+      </form>
+      <div id="uploadStatus"></div>
+    </section>
+  </main>
+</body>
+</html>
